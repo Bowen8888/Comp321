@@ -8,6 +8,7 @@ public class Yoda {
         int amount = 0;
         int v1 = 0;
         int v2 = 0;
+        //retrieve values
         while(sc.hasNextInt()){
             int value = sc.nextInt();
             amount++;
@@ -24,9 +25,13 @@ public class Yoda {
     
     }
     
+    /*
+     * Do the main work here
+     */
     private static void process(int v1, int v2){
         String r1 = "";
         String r2 = "";
+        //process digit
         while(v1>0 && v2>0){
             int i1 = v1 % 10;
             int i2 = v2 % 10;
@@ -50,6 +55,7 @@ public class Yoda {
         if (v2 >0){
             r2 = v2 + r2;
         }
+        //process result
         if(r1 == ""){
             System.out.println("YODA");
         }

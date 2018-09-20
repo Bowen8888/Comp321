@@ -25,6 +25,7 @@ public class GuessDataStructure {
                     return o2 - o1;
                 }
             });
+            //process operations
             for(int i=0; i<amount; i++){
                 int operation = sc.nextInt();
                 int value = sc.nextInt();
@@ -51,7 +52,7 @@ public class GuessDataStructure {
                     }
                 }
             }
-            
+            //process result
             if((isStack && isQueue) || (isStack && isPriorityQueue) || (isQueue && isPriorityQueue)){
                 System.out.println("not sure");
             }

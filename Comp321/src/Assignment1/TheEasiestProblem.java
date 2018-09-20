@@ -19,7 +19,9 @@ public class TheEasiestProblem {
         
         
     }
-    
+    /*
+     * sum digits
+     */
     public static int sum(int value){
         int total = 0;
         
